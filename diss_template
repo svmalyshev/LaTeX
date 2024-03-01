@@ -1,0 +1,81 @@
+\documentclass[a4paper,12pt]{report}
+
+\usepackage{fontspec}
+\usepackage{CharisSIL}
+\setmainfont{Charis SIL}
+
+\usepackage[russian]{babel}
+
+\usepackage[a4paper, includefoot,
+left=2.7cm, right=1.3cm, top=2cm, bottom=2cm, 
+headsep=1cm, footskip=1cm
+]{geometry}
+
+\usepackage{setspace}
+\setstretch{1.6}
+\usepackage{indentfirst}
+\setlength{\parindent}{2.25em}%Красная строка
+
+\usepackage{titlesec}
+\titleformat{\chapter}[hang]
+{\large\bfseries\filright}
+{\MakeUppercase{\chaptertitlename}~\thechapter.}
+{8pt}
+{}
+
+\titleformat{\section}
+{\normalfont\bfseries}
+{\thesection.}
+{.5em}
+{}
+{}
+
+\titleformat{\subsection}
+{\normalfont\bfseries}
+{\thesubsection.}
+{.5em}
+{}
+{}        
+
+\titlespacing{\chapter}{0pt}{1cm}{1cm}
+\titlespacing{\paragraph}{0pt}{2ex}{0.3em}
+
+\usepackage{datetime}
+
+\newdateformat{todayyear}{%
+  \THEYEAR}
+
+
+%--- Это блок для создания титульного листа -------
+\usepackage[]{customTitle}
+
+%--- назначем переменные теги в титуле, которые могут меняться от студента к студенту ----
+\newcommand\disc[1]{\def\thedisc{#1}} % специальность ВАК
+\newcommand\supervisor[1]{\def\thesupervisor{#1}} % научник
+\newcommand\supervisorPosition[1]{\def\thesupervisorPosition{#1}} % степень научника
+\newcommand\mycourse[1]{\def\thecourse{#1}} % обозначаем диссертаци на соискание чего....
+\newcommand\mytitle[1]{\def\thetitle{#1}} % название работы
+\newcommand\mydate[1]{\def\thedate{#1}} % дата (по умолчанию будет вставляться текущий год)
+\newcommand\myauthor[1]{\def\theauthor{#1}} % ФИО автора
+
+\mytitle{Значение изучения вещества при изучении геосинклиналей в активных тектонических обстановках}
+\mydate{\todayyear\today} % это не трогаем
+\disc{1.6.4. Минералогия, кристаллография. \\ Геохимия, геохимические методы поисков полезных ископаемых}
+\mycourse{на соискание ученой степени \\ кандидата геолого-минералогических наук}
+\myauthor{Машкин Эделвейс Захарович}
+\supervisor{ А.\,А.\,Выбегалло}
+\supervisorPosition{д.г.-м.н}
+
+\begin{document}
+\newgeometry{left=2.7cm, right=1.3cm, top=2cm, bottom=1cm} % пришлось поколхозить с геометрией, так как на титуле добавляются какие то пробелы лишние
+\maketitle
+
+\restoregeometry % возвращаемся к геометрии из преамбулы
+\chapter{Введение}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium fusce id velit ut. Purus non enim praesent elementum facilisis leo vel. Ac turpis egestas sed tempus urna et pharetra pharetra. Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Quis viverra nibh cras pulvinar mattis nunc. Ullamcorper a lacus vestibulum sed arcu. Porttitor massa id neque aliquam vestibulum morbi blandit. Aliquam purus sit amet luctus. Massa vitae tortor condimentum lacinia quis vel eros. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et. Quisque non tellus orci ac auctor augue mauris. Ut sem viverra aliquet eget sit amet. Sed cras ornare arcu dui vivamus.
+
+Fermentum dui faucibus in ornare. Sagittis eu volutpat odio facilisis mauris sit amet. Odio facilisis mauris sit amet massa vitae tortor condimentum. Nibh venenatis cras sed felis eget velit aliquet. Mi bibendum neque egestas congue. Pellentesque id nibh tortor id. Dui nunc mattis enim ut tellus. Purus non enim praesent elementum facilisis leo. Lobortis feugiat vivamus at augue eget arcu dictum varius. Vitae nunc sed velit dignissim sodales ut. Vivamus at augue eget arcu dictum varius. Est velit egestas dui id ornare. Nunc sed velit dignissim sodales. Erat velit scelerisque in dictum non consectetur. Rhoncus dolor purus non enim. Id diam vel quam elementum pulvinar etiam. Vitae elementum curabitur vitae nunc sed velit dignissim sodales ut. Ullamcorper eget nulla facilisi etiam dignissim diam. Venenatis tellus in metus vulputate. A diam maecenas sed enim ut sem.
+
+In ornare quam viverra orci. Quis blandit turpis cursus in hac. Pharetra vel turpis nunc eget lorem dolor sed. Ultrices sagittis orci a scelerisque purus semper eget. Turpis egestas sed tempus urna et pharetra. Sed arcu non odio euismod lacinia at quis. Tellus pellentesque eu tincidunt tortor aliquam nulla. Cursus turpis massa tincidunt dui ut ornare lectus sit. Eget est lorem ipsum dolor sit amet consectetur adipiscing. Commodo elit at imperdiet dui accumsan. Convallis posuere morbi leo urna molestie at. Tincidunt id aliquet risus feugiat in ante metus dictum at. Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Mattis molestie a iaculis at erat pellentesque. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus. Diam maecenas ultricies mi eget mauris pharetra et ultrices. Eu non diam phasellus vestibulum lorem.
+\end{document}
