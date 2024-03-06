@@ -84,17 +84,17 @@ headsep=0.5cm, footskip=1cm
 }
 
 \usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhf[ch]{\thepage}
-\renewcommand\headrulewidth{0pt}
-%\usepackage{etoolbox}
-%\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+
 %% если нужно номер страницы по госту -- в верхнем колонтитуле.
-\fancypagestyle{plain}{% % <-- this is new
-	\fancyhf{} 
-	\fancyhf[ch]{\thepage}
-	\renewcommand{\headrulewidth}{0pt}}
+% \pagestyle{fancy}
+% \fancyhf{}
+% \fancyhf[ch]{\thepage}
+% \renewcommand\headrulewidth{0pt}
+
+% \fancypagestyle{plain}{% 
+% 	\fancyhf{} 
+% 	\fancyhf[ch]{\thepage}
+% 	\renewcommand{\headrulewidth}{0pt}}
 
 
 \usepackage{ifthen}
