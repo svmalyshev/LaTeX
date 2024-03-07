@@ -15,6 +15,14 @@
 \usepackage{polyglossia}
 \setdefaultlanguage{russian}
 
+%% нормальные математические шрифты, но нужно папку с гарнитурой поместить в корень
+\usepackage{amsmath}
+% \usepackage{unicode-math}
+% \setmathfont{STIX2Math}[
+% Extension={.otf},
+% Path=./STIX2fonts/,
+% Scale=1] 
+
 \usepackage[a4paper, includefoot,
 left=2.7cm, right=1.3cm, top=2cm, bottom=1cm, 
 headsep=0.5cm, footskip=1cm
@@ -85,13 +93,14 @@ headsep=0.5cm, footskip=1cm
 
 \usepackage{fancyhdr}
 
+
 %% если нужно номер страницы по госту -- в верхнем колонтитуле.
 % \pagestyle{fancy}
 % \fancyhf{}
 % \fancyhf[ch]{\thepage}
 % \renewcommand\headrulewidth{0pt}
 
-% \fancypagestyle{plain}{% 
+% \fancypagestyle{plain}{% % <-- this is new
 % 	\fancyhf{} 
 % 	\fancyhf[ch]{\thepage}
 % 	\renewcommand{\headrulewidth}{0pt}}
@@ -120,15 +129,6 @@ headsep=0.5cm, footskip=1cm
 \renewcommand{\cftchappresnum}{ГЛАВА }
 \renewcommand{\cftchapaftersnum}{.}
 \renewcommand{\cftchapnumwidth}{5em}
-
-
-%% нормальные математические шрифты, но нужно папку с гарнитурой поместить в корень
-\usepackage{amsmath}
-% \usepackage{unicode-math}
-% \setmathfont{STIX2Math}[
-% Extension={.otf},
-% Path=./STIX2fonts/,
-% Scale=1] 
 
 %% Параметры заполнения титульного листа
 \usepackage{xkeyval}
