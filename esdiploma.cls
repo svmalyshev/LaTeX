@@ -10,10 +10,10 @@
 \usepackage{fontspec}
 \usepackage{CharisSIL}
 \setmainfont{Charis SIL}
-%\usepackage[russian]{babel}
+\usepackage[russian]{babel}
 
-\usepackage{polyglossia}
-\setdefaultlanguage{russian}
+%\usepackage{polyglossia}
+%\setdefaultlanguage{russian}
 
 %% нормальные математические шрифты, но нужно папку с гарнитурой поместить в корень
 \usepackage{amsmath}
