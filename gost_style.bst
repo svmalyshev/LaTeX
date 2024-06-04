@@ -144,9 +144,9 @@ FUNCTION {output.nonnull}
                 { output.state after.slash =
                     { "~/ " * write$ }
                     { output.state after.column =
-                        { "~: " * write$ }
+                        { ": " * write$ }
                         { output.state after.semicolumn =
-                            { "~; " * write$ }
+                            { "; " * write$ }
                         { add.period$ " " * write$ }
                        if$
                         }
