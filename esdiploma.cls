@@ -28,13 +28,14 @@ headsep=0.5cm, footskip=1cm
 ]{geometry}
 
 \usepackage{setspace}
-\setstretch{1.6}
-\usepackage{indentfirst}
-\setlength{\parindent}{2.25em}%Красная строка
+\setstretch{1.5}
 
 \usepackage{caption}
-\captionsetup[table]{font={stretch=1.2}}     %% change 1.2 as you like
+\captionsetup[table]{font={stretch=1.5}}     %% change 1.2 as you like
 \captionsetup[figure]{font={stretch=1.5}}    %% change 1.2 as you like
+
+\usepackage{indentfirst}
+\setlength{\parindent}{2.25em}%Красная строка
 
 \usepackage{wasysym}
 \usepackage{multirow}
