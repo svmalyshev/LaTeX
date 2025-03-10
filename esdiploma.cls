@@ -15,7 +15,7 @@
 %\usepackage{polyglossia}
 %\setdefaultlanguage{russian}
 
-%% нормальные математические шрифты, но нужно папку с гарнитурой поместить в корень
+%% если вы используете шрифты типа Times или Charis Sil, то лучше использовать данные математические шрифты. Гарнитуры лежат в папке STIX2fonts
 \usepackage{amsmath}
 % \usepackage{unicode-math}
 % \setmathfont{STIX2Math}[
