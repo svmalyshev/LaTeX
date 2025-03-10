@@ -9,11 +9,10 @@
 
 \usepackage{fontspec}
 \usepackage{CharisSIL}
-\setmainfont{Charis SIL}
-\usepackage[russian]{babel}
+\setmainfont{Charis SIL} % если нужно Times -- поменяйте шрифт на Times New Roman 
 
-%\usepackage{polyglossia}
-%\setdefaultlanguage{russian}
+\usepackage{polyglossia}
+\setdefaultlanguage{russian}
 
 %% если вы используете шрифты типа Times или Charis Sil, то лучше использовать данные математические шрифты. Гарнитуры лежат в папке STIX2fonts
 \usepackage{amsmath}
