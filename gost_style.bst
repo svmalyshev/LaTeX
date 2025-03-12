@@ -1395,7 +1395,7 @@ FUNCTION {author.before}
 {
   author empty$
     'skip$
-    {author num.names$ #20 <
+    {author num.names$ #30 <
       {format.authors output
        new.sentence}
       'skip$
@@ -2234,7 +2234,7 @@ FUNCTION {author.title.sort}
       if$
     }
     {
-      author num.names$ #20 <
+      author num.names$ #30 <
         {author sort.format.names }
         {title sort.format.title}
       if$
