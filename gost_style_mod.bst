@@ -2234,7 +2234,7 @@ FUNCTION {author.title.sort}
       if$
     }
     {
-      author num.names$ #20 <
+      author num.names$ #30 <
         {author sort.format.names }
         {title sort.format.title}
       if$
