@@ -11,6 +11,9 @@
 \usepackage{CharisSIL}
 \setmainfont{Charis SIL} % если нужно Times -- поменяйте шрифт на Times New Roman 
 
+%\usepackage[regular]{newcomputermodern} % смена шрифта на классический Computer Modern
+%\setmainfont{CMU Serif}
+
 \usepackage{polyglossia}
 \setdefaultlanguage{russian}
 
